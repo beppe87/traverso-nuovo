@@ -276,6 +276,22 @@
       background: rgba(255,255,255,.04);
       text-decoration:none;
     }
+
+    /* === Mobile fix: titolo HERO non tranciato === */
+@media (max-width: 520px){
+  .heroMedia{ min-height: 360px; }
+  .heroOverlay{
+    padding: 14px;
+    padding-bottom: calc(18px + env(safe-area-inset-bottom));
+  }
+  h1{
+    font-size: 34px;
+    line-height: 1.02;
+    word-break: break-word;
+  }
+  .kicker{ font-size: 11px; }
+  .lead{ font-size: 14px; }
+}
   </style>
 </head>
 
@@ -568,4 +584,5 @@
   document.getElementById("bar").style.width = pct + "%";
 </script>
 </body>
+
 </html>
