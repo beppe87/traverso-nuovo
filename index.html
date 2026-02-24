@@ -292,6 +292,25 @@
   .kicker{ font-size: 11px; }
   .lead{ font-size: 14px; }
 }
+
+    /* === Extra mobile fix: niente taglio in alto === */
+@media (max-width: 520px){
+  /* più spazio sopra (notch + barra browser) */
+  .heroOverlay{
+    padding-top: calc(26px + env(safe-area-inset-top));
+  }
+
+  /* titolo su 3 righe e più piccolo */
+  h1{
+    font-size: 30px;
+    line-height: 1.03;
+  }
+
+  /* abbassa leggermente il bollino */
+  .kicker{
+    margin-top: 6px;
+  }
+}
   </style>
 </head>
 
@@ -586,3 +605,4 @@
 </body>
 
 </html>
+
